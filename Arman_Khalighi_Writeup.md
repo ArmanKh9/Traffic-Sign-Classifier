@@ -42,7 +42,8 @@ Here is an exploratory visualization of the data set. It is one of the images wi
 
 ###Design and Test a Model Architecture
 
-####1. All the three data set pixel values were normalized around zero with sigma of 0.5. This helped avoiding very large values in training layers to be carried over to logits.
+####1. Preprocessing
+All the three data set pixel values were normalized around zero with sigma of 0.5. This helped avoiding very large values in training layers to be carried over to logits. Large values cause computational error and also it is favorable to keep values around zero with the same sigma in all direction. This results in less search for answer and quicker convergence.
 
 
 Here is an example of a traffic sign image after normalization.
